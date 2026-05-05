@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Beconn — Privacy Policy</title>
+  <style>
+    :root {
+      --bg: #FAF7F2;
+      --surface: #FFFCF8;
+      --text: #1C1410;
+      --text-secondary: #6B5447;
+      --accent: #B85C38;
+      --border: #E4D3C8;
+    }
+    * { box-sizing: border-box; }
+    html, body { margin: 0; padding: 0; background: var(--bg); color: var(--text); }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+      font-size: 16px;
+      line-height: 1.6;
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 48px 24px 96px;
+    }
+    h1 {
+      font-size: 32px;
+      font-weight: 600;
+      margin: 0 0 8px;
+      letter-spacing: -0.01em;
+    }
+    h2 {
+      font-size: 20px;
+      font-weight: 600;
+      margin: 40px 0 12px;
+      color: var(--text);
+    }
+    h3 {
+      font-size: 16px;
+      font-weight: 600;
+      margin: 20px 0 8px;
+    }
+    p, ul { color: var(--text-secondary); margin: 0 0 12px; }
+    ul { padding-left: 24px; }
+    li { margin-bottom: 6px; }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .meta {
+      color: var(--text-secondary);
+      font-size: 14px;
+      margin-bottom: 32px;
+      padding-bottom: 16px;
+      border-bottom: 1px solid var(--border);
+    }
+    strong { color: var(--text); font-weight: 600; }
+    footer {
+      margin-top: 64px;
+      padding-top: 24px;
+      border-top: 1px solid var(--border);
+      font-size: 13px;
+      color: var(--text-secondary);
+    }
+  </style>
+</head>
+<body>
+  <h1>Privacy Policy</h1>
+  <p class="meta">
+    Beconn (the &ldquo;App&rdquo;) is built by Daniel Kwasi Twum-Acheampong (&ldquo;we&rdquo; or &ldquo;us&rdquo;).<br>
+    Effective date: May 5, 2026
+  </p>
+
+  <p>
+    This Privacy Policy explains what information Beconn collects, how we use it, and the choices you have.
+    We aim to collect as little as possible and to be specific about what stays on your device versus what we store.
+  </p>
+
+  <h2>1. Information you provide to us</h2>
+  <p>When you create an account or fill out your profile, we store the following on our backend (Google Firebase):</p>
+  <ul>
+    <li><strong>Phone number</strong> — used to sign you in.</li>
+    <li><strong>Display name</strong> — shown on your profile.</li>
+    <li><strong>Optional profile details</strong> — email address, profile photo, biography, birthday, home city, and the names of close family members you choose to add (e.g. spouse).</li>
+  </ul>
+  <p>You can edit or remove any of this at any time from the Settings screen in the App.</p>
+
+  <h2>2. iOS permissions Beconn requests</h2>
+  <p>Beconn asks for several iOS system permissions. In every case the underlying data stays on your device unless explicitly stated otherwise.</p>
+
+  <h3>Contacts</h3>
+  <p>
+    Beconn reads your iOS Contacts so you can choose which people to add to the App. <strong>Your address book is not uploaded to our servers.</strong>
+    The contact details for the people you import (name, phone number, email, photo, organization, birthday) are stored locally on your device using Apple&rsquo;s Core Data framework.
+    On iOS 18 and later you may grant Limited Access &mdash; in that case Beconn only sees the contacts you select.
+  </p>
+
+  <h3>Microphone</h3>
+  <p>
+    The App uses the microphone for voice notes. When you record a note, the audio is transcribed to text. The transcript (not the audio) is sent to OpenAI through our secure backend so we can extract structured details about the people you mentioned (see Section 4).
+  </p>
+
+  <h3>Location (When In Use)</h3>
+  <p>
+    With your permission, Beconn uses your approximate location to show people in the App who are physically nearby (the &ldquo;In Town&rdquo; indicator). Your location is not stored on our servers and is not shared with third parties. You can decline this permission and the rest of the App will still work.
+  </p>
+
+  <h3>Calendar</h3>
+  <p>
+    With your permission, Beconn reads your calendar so it can suggest people you&rsquo;re meeting with that day. Calendar events are read on-device and not uploaded to our servers.
+  </p>
+
+  <h2>3. Information we do not collect</h2>
+  <ul>
+    <li>We do not run analytics SDKs. We do not track IP addresses, page views, or session duration.</li>
+    <li>We do not run ads and we do not have advertising trackers.</li>
+    <li>We do not sell or rent your data to anyone.</li>
+    <li>We do not send marketing emails. The only emails you may receive are required service notifications (for example, security or account messages).</li>
+  </ul>
+
+  <h2>4. Third-party services we use</h2>
+
+  <h3>Google Firebase</h3>
+  <p>Beconn&rsquo;s backend runs on Google Firebase. Specifically:</p>
+  <ul>
+    <li><strong>Firebase Authentication</strong> &mdash; verifies your phone number when you sign in.</li>
+    <li><strong>Cloud Firestore</strong> &mdash; stores your profile data.</li>
+    <li><strong>Cloud Functions</strong> &mdash; serves as a secure proxy for our calls to OpenAI so API keys never live on your device.</li>
+    <li><strong>Cloud Storage</strong> &mdash; stores your profile photo if you upload one.</li>
+  </ul>
+  <p>Firebase is governed by Google&rsquo;s privacy practices. See <a href="https://firebase.google.com/support/privacy">Firebase&rsquo;s privacy and security page</a>.</p>
+
+  <h3>OpenAI</h3>
+  <p>
+    When you record a voice note, the transcribed text is sent to OpenAI through our backend so it can extract structured information (people mentioned, dates, follow-up actions). Per <a href="https://openai.com/policies/api-data-usage-policies">OpenAI&rsquo;s API data usage policy</a>, content sent through their API is not used to train their models.
+    See <a href="https://openai.com/policies/privacy-policy">OpenAI&rsquo;s privacy policy</a> for details on how they handle the data they receive.
+  </p>
+
+  <h2>5. How we use your information</h2>
+  <ul>
+    <li>To operate the App: signing you in, syncing your profile, displaying your contacts and notes.</li>
+    <li>To process voice notes you record (see Section 4).</li>
+    <li>To debug, fix, and improve the App.</li>
+    <li>To comply with legal obligations.</li>
+  </ul>
+
+  <h2>6. Sharing your information</h2>
+  <p>We share your information only in these limited cases:</p>
+  <ul>
+    <li>With our infrastructure providers (Firebase and OpenAI), as described above, so they can deliver the services Beconn relies on.</li>
+    <li>If required by law, court order, or other valid legal process.</li>
+    <li>To investigate fraud or to protect the safety of users or the public.</li>
+  </ul>
+  <p>We never sell your personal information.</p>
+
+  <h2>7. Data retention and deletion</h2>
+  <p>
+    We keep your account information for as long as your account is active. If you want to delete your account and all associated data, email us at <a href="mailto:kwasi.uxdesign@gmail.com">kwasi.uxdesign@gmail.com</a> from the address linked to your account, or from a phone number we can verify, and we will delete it within 30 days.
+  </p>
+  <p>
+    Uninstalling the App removes the local data stored on your device (imported contacts, notes, settings) but does not delete the profile information stored on our backend &mdash; for that, please email us as described above.
+  </p>
+
+  <h2>8. Your rights</h2>
+  <p>Depending on where you live, you may have rights to:</p>
+  <ul>
+    <li>Access the personal data we hold about you.</li>
+    <li>Correct inaccurate data.</li>
+    <li>Delete your data.</li>
+    <li>Object to or restrict certain processing.</li>
+    <li>Receive a copy of your data in a portable format.</li>
+  </ul>
+  <p>To exercise any of these, email <a href="mailto:kwasi.uxdesign@gmail.com">kwasi.uxdesign@gmail.com</a>.</p>
+
+  <h2>9. Children</h2>
+  <p>
+    Beconn is not directed at children. We do not knowingly collect information from children under 13 (in the United States) or under 16 (in the European Economic Area). If you believe a child has provided us with personal information, contact us at <a href="mailto:kwasi.uxdesign@gmail.com">kwasi.uxdesign@gmail.com</a> and we will delete it.
+  </p>
+
+  <h2>10. Security</h2>
+  <p>
+    We use technical and organizational safeguards to protect your information &mdash; including TLS in transit, Firebase&rsquo;s security rules to control access, and storing API keys server-side rather than on your device. No system is perfectly secure, but we make a sincere effort to keep your data safe.
+  </p>
+
+  <h2>11. International data transfers</h2>
+  <p>
+    Beconn is operated from the United States, and our service providers (Firebase, OpenAI) are also based in the United States. By using the App you understand that your information will be transferred to and processed in the United States.
+  </p>
+
+  <h2>12. Changes to this policy</h2>
+  <p>
+    We may update this Privacy Policy from time to time. When we do, we&rsquo;ll change the effective date at the top of this page. For material changes we&rsquo;ll do our best to give you notice in the App or by email.
+  </p>
+
+  <h2>13. Contact</h2>
+  <p>
+    Questions, requests, or concerns? Email <a href="mailto:kwasi.uxdesign@gmail.com">kwasi.uxdesign@gmail.com</a>.
+  </p>
+
+  <footer>
+    Beconn &middot; Built by Daniel Kwasi Twum-Acheampong
+  </footer>
+</body>
+</html>
