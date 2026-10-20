@@ -9,12 +9,12 @@
 <body>
 
 <h1>Privacy Policy</h1>
-<p class="updated">Effective 16 September 2026 · Replaces the version of 5 May 2026</p>
+<p class="updated">Effective 20 October 2026 · Replaces the version of 16 September 2026</p>
 
 <p>Beconn helps you stay close to people you already know. This policy describes what the app actually collects, why, and who else sees it — not a general-purpose template.</p>
 
 <div class="card">
-  <strong>The short version.</strong> We collect what the app needs to work and nothing for advertising. We do not sell your data. We do not track you across other companies' apps or websites. Your contacts stay on your device unless you choose to invite someone. You can delete your account, and everything in it, from inside the app.
+  <strong>The short version.</strong> We collect what the app needs to work and nothing for advertising. We do not sell your data. We do not track you across other companies' apps or websites. Your address book stays on your device: to show who's already on Beconn we check numbers in hashed form and keep nothing, and if you invite someone who isn't on Beconn yet, we keep their number until they join, for up to 90 days. Only people you've connected with see your full profile. You can delete your account and the data we hold about you from inside the app.
 </div>
 
 <h2>1. Information you provide to us</h2>
@@ -22,7 +22,8 @@
   <tr><th>Data</th><th>Why</th></tr>
   <tr><td>Phone number</td><td>It is how you sign in and how friends find you. Verified by SMS.</td></tr>
   <tr><td>Name, and optionally a photo and email address</td><td>So the people you connect with know who you are.</td></tr>
-  <tr><td>Beconns, comments, notes and to-dos</td><td>So the app can show them to the people you sent them to.</td></tr>
+  <tr><td>Beconns and comments</td><td>So the app can show them to the people you sent them to.</td></tr>
+  <tr><td>Notes and to-dos</td><td>Stored only on your device. When you use Smart Notes, the <em>text</em> of a voice note is sent for parsing — see "Third-party services" below.</td></tr>
   <tr><td>Photos you attach to a beconn</td><td>To display on that beconn.</td></tr>
   <tr><td>Your monthly forecast</td><td>The days you mark as busy, so friends can see when you are free. Only the dates — never a reason.</td></tr>
   <tr><td>Optional profile details</td><td>Birthday, home city, and the names of close family members you choose to add. Birthdays drive reminders; a home city is used to group friends who live near you. All optional, all editable, all removable.</td></tr>
@@ -32,7 +33,13 @@
 <p>Every one of these is optional, requested in context, and revocable in iOS Settings.</p>
 
 <h3>Contacts</h3>
-<p>To build your own list of people and remember details about them. The details of people you import — name, phone number, email, photo, organisation, birthday — are stored <strong>locally on your device</strong> using Apple's Core Data framework. We do not upload your address book, and other users never see your contacts.</p>
+<p>To build your own list of people and remember details about them. The details of people you import — name, phone number, email, photo, organisation, birthday — are stored <strong>locally on your device</strong> using Apple's Core Data framework. We do not store your address book. To show which of your contacts already use Beconn, the app sends our server a hash of each number; the server answers with the matches — their name and photo — and keeps nothing.</p>
+<p>Beyond that check, contact details are kept on our servers only when you invite someone who isn't on Beconn yet:</p>
+<ul>
+  <li>We store their phone number so the invitation is waiting when they sign up. It is deleted when they join, when you delete your account, or automatically 90 days after your most recent invitation.</li>
+  <li>If you invite them to a beconn, the name you have for them appears on that beconn's guest list, which the other guests can see. Their number does not: the list holds a code made from it with a key only your account and our server hold, so we can recognise them when they join and no one else can work the number out.</li>
+  <li>You send the invitation text yourself, from Messages.</li>
+</ul>
 
 <h3>Microphone and speech recognition</h3>
 <p>For voice notes. Audio is transcribed and the resulting <em>text</em> is sent for parsing into people, dates and to-dos — see "Third-party services" below. We do not store the audio recording.</p>
@@ -69,18 +76,19 @@
 <p>We record which screens and features are used, and we receive crash reports, so we can fix what is broken and improve what is used. This is tied to an account identifier so we can tell one person's session from another's. It is <strong>not</strong> sold, shared with advertisers, or combined with data from other companies. It contains no message content, no contact details and no precise location.</p>
 
 <h2>6. How we use your information</h2>
-<p>To run the app: to sign you in, connect you with people you choose, deliver beconns and notifications, and keep your data in sync across your devices. We also use it to keep the service safe — see "Safety and moderation".</p>
+<p>To run the app: to sign you in, connect you with people you choose, deliver beconns and notifications, and keep your account data in sync across your devices. We also use it to keep the service safe — see "Safety and moderation".</p>
 
 <h2>7. Sharing your information</h2>
-<p>Your content is shared only with the people you send it to. There is no public feed and no discovery: nobody sees a beconn unless you invited them. We share data with the providers in section 4, and we will disclose information if the law requires it.</p>
+<p>Your content is shared only with the people you send it to. There is no public feed and no discovery: nobody sees a beconn unless you invited them. If you invite someone who isn't on Beconn yet to a beconn, its guests see the name you have for them (see "Contacts" in section 2). We share data with the providers in section 4, and we will disclose information if the law requires it.</p>
+<p>Your own profile — phone number, email, birthday, home city and the family members you add — is visible only to people you've connected with. Anyone else on Beconn, such as another guest on a beconn, sees only your name and photo.</p>
 
 <h2>8. Safety and moderation</h2>
 <p>Beconn lets you report a comment and block another user from inside the app. Reports are reviewed by us and may result in content or accounts being removed. <strong>Reports are private</strong> — the person reported is not told who reported them. Blocking is also private: the person blocked is not notified.</p>
 
 <h2>9. Data retention and deletion</h2>
-<p>Your account data is kept while your account exists. You can delete your account from <strong>Settings → Delete Account</strong> in the app. This removes your profile, your beconns, your notes and to-dos, your forecast and your connections, across every device. It cannot be undone, and it happens immediately — at most within 30 days for routine backups.</p>
+<p>Your account data is kept while your account exists. You can delete your account from <strong>Settings → Delete Account</strong> in the app. This removes from our servers your profile, the beconns you created and their comments, your comments on other beconns, your connections, your forecast, your location status, the photos you uploaded, and invitations you sent to people not yet on Beconn. It cannot be undone, and it happens immediately — at most within 30 days for routine backups. Your People list, notes and to-dos are stored only on your device; deleting the app removes them.</p>
 <p>If you want a copy of your data first, use <strong>Settings → Export Data</strong>, which writes everything to a file you keep.</p>
-<p>Content other people have already received — a beconn you sent them, a comment on their plan — remains theirs, with your name removed from the audience.</p>
+<p>Other people's beconns stay, with you removed from their guest lists.</p>
 <p>Note that <strong>deleting the app is not the same as deleting your account</strong>. Uninstalling removes the data held on your device; use Settings → Delete Account first if you want your account removed from our servers too.</p>
 
 <h2>10. Your rights</h2>
