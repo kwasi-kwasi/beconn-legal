@@ -9,7 +9,7 @@
 <body>
 
 <h1>Privacy Policy</h1>
-<p class="updated">Effective 20 October 2026 · Replaces the version of 16 September 2026</p>
+<p class="updated">Effective 22 October 2026 · Replaces the version of 20 October 2026</p>
 
 <p>Beconn helps you stay close to people you already know. This policy describes what the app actually collects, why, and who else sees it — not a general-purpose template.</p>
 
@@ -23,7 +23,7 @@
   <tr><td>Phone number</td><td>It is how you sign in and how friends find you. Verified by SMS.</td></tr>
   <tr><td>Name, and optionally a photo and email address</td><td>So the people you connect with know who you are.</td></tr>
   <tr><td>Beconns and comments</td><td>So the app can show them to the people you sent them to.</td></tr>
-  <tr><td>Notes and to-dos</td><td>Stored only on your device. When you use Smart Notes, the <em>text</em> of a voice note is sent for parsing — see "Third-party services" below.</td></tr>
+  <tr><td>Notes and to-dos</td><td>Stored only on your device. If you allow Smart Notes, the <em>text</em> of a note you write or dictate is sent to Anthropic to be organised — see "Smart Notes and AI" in section 4.</td></tr>
   <tr><td>Photos you attach to a beconn</td><td>To display on that beconn.</td></tr>
   <tr><td>Your monthly forecast</td><td>The days you mark as busy, so friends can see when you are free. Only the dates — never a reason.</td></tr>
   <tr><td>Optional profile details</td><td>Birthday, home city, and the names of close family members you choose to add. Birthdays drive reminders; a home city is used to group friends who live near you. All optional, all editable, all removable.</td></tr>
@@ -42,7 +42,7 @@
 </ul>
 
 <h3>Microphone and speech recognition</h3>
-<p>For voice notes. Audio is transcribed and the resulting <em>text</em> is sent for parsing into people, dates and to-dos — see "Third-party services" below. We do not store the audio recording.</p>
+<p>For voice notes. Apple's speech recognition turns your voice into text, on your device where it supports it; we never receive or store audio. The text is sent to Anthropic only if you have allowed Smart Notes — see "Smart Notes and AI" in section 4.</p>
 
 <h3>Location (When In Use)</h3>
 <p>Only to tell friends whether you are in town. We store an approximate position, and what friends see is a yes/no — <strong>never a precise location, an address, or a history of where you have been.</strong></p>
@@ -67,10 +67,20 @@
 <table>
   <tr><th>Provider</th><th>What they handle</th></tr>
   <tr><td>Google (Firebase)</td><td>Sign-in, database, file storage, push notifications, crash reports, and usage analytics.</td></tr>
-  <tr><td>Anthropic</td><td>The <em>text</em> of a voice note, when you use Smart Notes, so it can be turned into people, dates and to-dos. It is sent for that single purpose and is not used to train their models.</td></tr>
+  <tr><td>Anthropic</td><td>The <em>text</em> of a note, only if you have allowed Smart Notes, so it can be turned into people, notes, to-dos and dates. Not used to train their models; deleted within 30 days. See "Smart Notes and AI" below.</td></tr>
   <tr><td>Apple</td><td>Push notification delivery, and purchases if you ever buy a subscription.</td></tr>
 </table>
 <p class="updated">Note: before 15 September 2026 this processing was performed by OpenAI. It is now Anthropic.</p>
+
+<h3>Smart Notes and AI</h3>
+<p>Smart Notes is optional. It uses Claude, an AI model made by Anthropic, PBC, to turn a note into the people, notes, to-dos and dates in it, which you review before anything is saved. The app explains what is sent and to whom, and asks your permission, before the first note is sent; until you agree, nothing is.</p>
+<ul>
+  <li><strong>What is sent:</strong> the text of the note — what you type, or what your voice note is transcribed to. It can include names and anything you say about the people in it. Nothing else: not your name, phone number, account details, contacts, location or audio.</li>
+  <li><strong>How it is collected:</strong> you type the note, or dictate it and Apple's speech recognition turns it into text, on your device where it supports it. Beconn never receives or stores audio.</li>
+  <li><strong>How it is used:</strong> our server passes the text to Anthropic and returns the result to your device. We do not keep the text; we keep only counts of how many Smart Notes you use, for rate limits and to plan pricing. The text is used for no other purpose.</li>
+  <li><strong>How Anthropic protects it:</strong> Anthropic processes it only to provide this service to us, under commercial terms by which it does not use the text to train its models and deletes it within 30 days — except content flagged for breaking Anthropic's usage policies, which it may keep for up to 2 years, or where the law requires. These protections are at least equal to those in this policy.</li>
+  <li><strong>Your choice:</strong> Settings → Privacy → Smart Notes turns it off at any time. Once it is off, our server refuses to send any further note text to Anthropic. Without Smart Notes, notes are saved exactly as written, only on your device.</li>
+</ul>
 
 <h2>5. Diagnostics and analytics</h2>
 <p>We record which screens and features are used, and we receive crash reports, so we can fix what is broken and improve what is used. This is tied to an account identifier so we can tell one person's session from another's. It is <strong>not</strong> sold, shared with advertisers, or combined with data from other companies. It contains no message content, no contact details and no precise location.</p>
